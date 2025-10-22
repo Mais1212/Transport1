@@ -3,17 +3,19 @@
 // Определить функции назначения и изменения полей и функцию
 // вывода на экран.
 
-package transport;
+package transport1;
 
-public class TransportVehicle(){
+public class TransportVehicle{
     String mark;
     String model;
     int number;
-    double power;
-    public TransportVehicle(mark, model, number, power){
+    int power;
+    public TransportVehicle(
+            String mark, String model, int number, int power
+        ){
         this.mark = mark;
         this.model = model;
-        this.number number;
+        this.number = number;
         this.power = power;
     }
     public String getMark(){
@@ -29,21 +31,21 @@ public class TransportVehicle(){
     }
 
     public int getPower(){
-        return this.Power()
+        return this.power;
     }
 
     public void setMark(String mark){
         this.mark = mark;
     }
 
-    public void SetModel(String model){
+    public void setModel(String model){
         this.model = model;
     }
-    public setNumber(int number){
+    public void setNumber(int number){
         this.number=number;
     }
 
-    public setPower(int power){
+    public void setPower(int power){
         this.power = power;
     }
 
@@ -52,4 +54,5 @@ public class TransportVehicle(){
         System.out.println(model);
         System.out.println(number);
         System.out.println(power);
+    }
 }

@@ -3,9 +3,9 @@
 // Определить функцию вывода на экран
 // Определить функцию переназначения ФИО пилота, количества посадочных мест
 
-package transport;
+package transport1;
 
-public class Airplane() extends TransportVehicle{
+public class Airplane extends TransportVehicle{
     String pilot;
     int places;
 
@@ -14,7 +14,7 @@ public class Airplane() extends TransportVehicle{
             int power, String pilot, int places
         )
     {
-        super();
+        super(mark, model, number, power);
         this.pilot = pilot;
         this.places = places;
     }
@@ -26,7 +26,7 @@ public class Airplane() extends TransportVehicle{
         this.places = places;
     }
 
-    public String setPilot() {
+    public String getPilot() {
         return pilot;
     }
 
@@ -34,8 +34,9 @@ public class Airplane() extends TransportVehicle{
         return places;
     }
 
+    @Override
     public void print(){
-        super().print();
+        super.print();
         System.out.println(places);
         System.out.println(pilot);
     }
